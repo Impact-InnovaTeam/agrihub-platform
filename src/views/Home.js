@@ -1,10 +1,19 @@
 import React from 'react';
 
+import Header from 'components/header';
+import SelectCourses from 'components/content/SelectCourses';
+import TopCategories from 'components/content/TopCategories';
+import FooterContent from 'components/footer/FooterContent';
+import Footer from 'components/footer';
+
 export default () => {
   return (
-    <div className="mt-5">
-      <h1 className="text-center">Future Site of AgriHub</h1>
-      <h2 className="text-center">Stay tuned!</h2>
-    </div>
+    <>
+      <Header />
+      <SelectCourses />
+      <TopCategories />
+      <FooterContent />
+      <Footer />
+    </>
   );
 };

@@ -4,6 +4,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import 'theme/default.scss';
+import 'theme/style.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

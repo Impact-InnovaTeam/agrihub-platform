@@ -1,0 +1,26 @@
+@import 'theme/variables.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+#ahHeader {
+  background-image: url('/assets/backgrounds/homepage-header.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#ahHeader .header-shadow {
+  text-shadow: 0 0 1em $green;
+}
+
+#ahSearch:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.hidden {
+  transform: translateY(-110%);
+}
