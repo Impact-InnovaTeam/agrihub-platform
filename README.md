@@ -21,7 +21,7 @@ You must have the following applications installed in your machine:
 
 - [x] Project Setup
 - [ ] UI Screens
-  - [ ] Home
+  - [x] Home
   - [ ] About
   - [ ] Community
   - [ ] Courses

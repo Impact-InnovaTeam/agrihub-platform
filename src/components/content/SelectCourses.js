@@ -28,7 +28,7 @@ const courses = [
 export default () => {
   return (
     <section id="ahTopCategories">
-      <Container className="py-5">
+      <Container className="py-5 border-bottom">
         <Row>
           <Col>
             <h3 className="font-weight-bold">

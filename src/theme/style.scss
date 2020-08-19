@@ -9,7 +9,6 @@ html {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 #ahHeader .header-shadow {
@@ -21,6 +20,9 @@ html {
   box-shadow: none !important;
 }
 
-.hidden {
-  transform: translateY(-110%);
+#ahAuthorization .order-1 {
+  background-image: url('/assets/backgrounds/homepage-header.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

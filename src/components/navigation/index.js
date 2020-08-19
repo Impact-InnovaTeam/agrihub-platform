@@ -115,8 +115,7 @@ export default () => {
                   'text-white',
                   'rounded-pill'
                 )}
-                href="https://bit.ly/joinwesoarhigh"
-                target="_blank"
+                href="/signin"
               >
                 Start Learning
               </NavLink>

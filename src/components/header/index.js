@@ -12,7 +12,7 @@ import {
 export default () => {
   return (
     <>
-      <header id="ahHeader" className="text-white">
+      <header id="ahHeader" className="text-white vh-100">
         <Container className="pt-5 px-3">
           <Row className="mt-5 pt-5">
             <Col className="ml-auto" xs="12" md="9" lg="7">
