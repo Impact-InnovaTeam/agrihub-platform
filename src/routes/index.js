@@ -5,6 +5,7 @@ import Loader from 'components/loader';
 
 const Home = lazy(() => import('views/Home'));
 const SignIn = lazy(() => import('views/SignIn'));
+const SignUp = lazy(() => import('views/SignUp'));
 
 export default () => {
   return (
@@ -16,6 +17,9 @@ export default () => {
           </Route>
           <Route exact path="/signin">
             <SignIn />
+          </Route>
+          <Route exact path="/signup">
+            <SignUp />
           </Route>
         </Switch>
       </Suspense>

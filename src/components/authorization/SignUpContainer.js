@@ -9,25 +9,25 @@ export default () => {
         <Row className="h-100">
           <Col className="h-100 order-12 d-flex p-5" xs="12" lg="7">
             <Card className="m-5 w-100 shadow-lg border-0">
-              <CardBody className="text-center px-5 py-3">
-                <h1 className="mb-3 font-weight-bold">Sign In</h1>
+              <CardBody className="text-center py-3 px-5">
+                <h1 className="mb-3 font-weight-bold">Sign Up</h1>
                 <Row className="mt-4 mb-2 pb-4">
                   <Col xs="6">
                     <Button className="p-2" color="success" block>
-                      <i className="fab fa-facebook-square mr-3" /> Sign in with
+                      <i className="fab fa-facebook-square mr-3" /> Sign up with
                       Facebook
                     </Button>
                   </Col>
                   <Col xs="6">
                     <Button className="p-2" color="light" block>
                       <i className="fab fa-google mr-3" />
-                      Sign in with Google
+                      Sign up with Google
                     </Button>
                   </Col>
                 </Row>
                 <Row className="border-top pt-4">
                   <Col className="mx-auto" xs="9">
-                    <Input type="email" placeholder="Email" />
+                    <Input type="text" placeholder="Email" />
                   </Col>
                 </Row>
                 <Row className="mt-2">
@@ -36,17 +36,14 @@ export default () => {
                   </Col>
                 </Row>
                 <Row className="mt-2">
-                  <Col className="ml-auto" xs="5">
-                    <NavLink
-                      className="btn btn-link btn-block text-left"
-                      to="/forgot"
-                    >
-                      Forgot password?
-                    </NavLink>
+                  <Col className="mx-auto" xs="9">
+                    <Input type="password" placeholder="Confirm Password" />
                   </Col>
-                  <Col className="mr-auto" xs="4">
+                </Row>
+                <Row className="mt-2">
+                  <Col className="mx-auto" xs="6">
                     <Button className="px-3" color="primary" block>
-                      Sign In &rarr;
+                      Create my Account
                     </Button>
                   </Col>
                 </Row>
@@ -60,9 +57,9 @@ export default () => {
                     </NavLink>
                     <NavLink
                       className="btn btn-outline-secondary px-3 py-2"
-                      to="/signup"
+                      to="/signin"
                     >
-                      New user? Sign up here!
+                      Already have an account?
                     </NavLink>
                   </Col>
                 </Row>
