@@ -27,7 +27,7 @@ You must have the following applications installed in your machine:
   - [ ] Courses
   - [ ] View Course
   - [ ] Profile
-  - [ ] Login/Registration
+  - [x] Login/Registration
 - [ ] Localization
 
 ## Environment Variables

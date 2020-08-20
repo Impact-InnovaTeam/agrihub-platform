@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Loader from 'components/loader';
 
 const Home = lazy(() => import('views/Home'));
+const Community = lazy(() => import('views/Community'));
 const SignIn = lazy(() => import('views/SignIn'));
 const SignUp = lazy(() => import('views/SignUp'));
 
@@ -14,6 +15,9 @@ export default () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/community">
+            <Community />
           </Route>
           <Route exact path="/signin">
             <SignIn />
