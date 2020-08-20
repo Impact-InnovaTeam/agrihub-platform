@@ -42,3 +42,8 @@ REACT_APP_DESCRIPTION = Learn how to farm straight from our very own farmers
 PUBLIC_URL = http://localhost:3000
 GENERATE_SOURCEMAP = false
 ```
+
+## Contributors
+
+Darwin Camahalan
+Arjay Osma
