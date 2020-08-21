@@ -45,6 +45,7 @@ export default () => {
         scroll ? 'bg-transparent' : 'bg-light shadow-lg',
         'py-3'
       )}
+      style={!scroll ? { opacity: 0.9 } : null}
       dark={scroll}
       light={!scroll}
       fixed="top"

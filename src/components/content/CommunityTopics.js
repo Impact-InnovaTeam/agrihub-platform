@@ -28,11 +28,11 @@ const categories = [
 
 const topics = [
   {
-    title: 'Ethanol',
+    title: 'What is the best way to produce seedlings?',
     category: 'Seed Production',
     name: 'Jessalin',
     votes: 44,
-    comments: 100,
+    comments: 10,
   },
   {
     title: 'FAMOTIDINE',
@@ -154,31 +154,32 @@ export default () => {
                     <ListGroupItem key={index}>
                       <Row>
                         <Col xs="2">
-                          <Button className="p-0 text-dark" block color="link">
+                          <Button
+                            className="p-0 text-dark"
+                            block
+                            color="link"
+                            size="lg"
+                          >
                             <i className="fas fa-caret-up" />
                           </Button>
                           <p className="text-center mb-0">
                             <small>{topic.votes}</small>
                           </p>
-                          <Button className="p-0 text-dark" block color="link">
-                            <i className="fas fa-caret-down" />
-                          </Button>
                         </Col>
-                        <Col className="py-3" xs="8">
+                        <Col className="py-2" xs="8">
                           <h6>
-                            <NavLink className="stretched-link" to="/course">
+                            <NavLink
+                              className="stretched-link"
+                              to="/community/t"
+                            >
                               {topic.title}
                             </NavLink>
                           </h6>
                           <p className="mb-0">
                             <small>{moment().fromNow()}</small>
                             <span className="mx-2">&bull;</span>
-                            <small>{topic.name}</small>
-                            <Badge
-                              className="ml-3 px-3 py-1"
-                              color="secondary"
-                              pill
-                            >
+                            <small className="mr-3">{topic.name}</small>
+                            <Badge className="px-3 py-1" color="secondary" pill>
                               {topic.category}
                             </Badge>
                           </p>
