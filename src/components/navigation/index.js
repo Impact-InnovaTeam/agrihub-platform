@@ -45,15 +45,21 @@ export default () => {
         scroll ? 'bg-transparent' : 'bg-light shadow-lg',
         'py-3'
       )}
-      style={!scroll ? { opacity: 0.9 } : null}
+      style={!scroll ? { opacity: 0.95 } : null}
       dark={scroll}
       light={!scroll}
       fixed="top"
       expand="lg"
     >
-      <Container className="py-2">
+      <Container className="py-1">
         <NavbarBrand id="navLogo" className="font-weight-bold" href="/">
-          AgriHub
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/logo/${
+              scroll ? 'agrihub-logo-white.png' : 'agrihub-logo-colored.png'
+            }`}
+            alt={`${process.env.REACT_APP_NAME} - ${process.env.REACT_APP_CAPTION}`}
+            loading="lazy"
+          />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -102,7 +108,7 @@ export default () => {
               >
                 English
               </DropdownToggle>
-              <DropdownMenu className="shadow-lg" right>
+              <DropdownMenu className="shadow-lg mb-3" right>
                 <DropdownItem>Tagalog</DropdownItem>
                 <DropdownItem>Cebuano</DropdownItem>
               </DropdownMenu>

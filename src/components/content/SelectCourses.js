@@ -73,11 +73,11 @@ export default () => {
                   </h6>
                   <p className="text-secondary">
                     <strong className="mr-3">{course.rating}</strong>
-                    <i key={index} className="fas fa-star" />
-                    <i key={index} className="fas fa-star" />
-                    <i key={index} className="fas fa-star" />
-                    <i key={index} className="fas fa-star" />
-                    <i key={index} className="far fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="fas fa-star" />
+                    <i className="far fa-star" />
                   </p>
                   <h6>
                     <sup className="mr-1">Php</sup>

@@ -23,7 +23,8 @@ You must have the following applications installed in your machine:
 - [ ] UI Screens
   - [x] Home
   - [ ] About
-  - [ ] Community
+  - [x] Community
+  - [x] Community Discussion
   - [ ] Courses
   - [ ] View Course
   - [ ] Profile
