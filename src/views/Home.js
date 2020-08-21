@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from 'components/header';
 import SelectCourses from 'components/content/SelectCourses';
+import Pricing from 'components/content/Pricing';
 import TopCategories from 'components/content/TopCategories';
 import FooterContent from 'components/footer/FooterContent';
 import Footer from 'components/footer';
@@ -13,6 +14,7 @@ export default () => {
     <SiteLayout>
       <Header />
       <SelectCourses />
+      <Pricing />
       <TopCategories />
       <FooterContent />
       <Footer />

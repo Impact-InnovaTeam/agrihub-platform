@@ -8,39 +8,31 @@ const courses = [
     author: 'Darwin Camahalan',
     image: `${process.env.PUBLIC_URL}/assets/sample/pexels-iconcom-236473.jpg`,
     rating: '4.4',
-    price: '1,500.00',
-    originalPrice: '2,500.00',
   },
   {
     title: 'Horticulture 101',
     author: 'Rollie Jabonero',
     image: `${process.env.PUBLIC_URL}/assets/sample/pexels-john-lambeth-2886937.jpg`,
     rating: '4.5',
-    price: '1,350.00',
-    originalPrice: '1,500.00',
   },
   {
     title: 'The Therapeutic Power of Gardening',
     author: 'Nessa Bacani',
     image: `${process.env.PUBLIC_URL}/assets/sample/pexels-kaboompics-com-6442.jpg`,
     rating: '4.2',
-    price: '2,500.00',
-    originalPrice: '3,500.00',
   },
   {
     title: 'Agritourism in Asia',
     author: 'Laurence Lloyd',
     image: `${process.env.PUBLIC_URL}/assets/sample/pexels-quang-nguyen-vinh-2162133.jpg`,
     rating: '4.0',
-    price: '1,325.00',
-    originalPrice: '1,500.00',
   },
 ];
 
 export default () => {
   return (
     <section id="ahTopCategories">
-      <Container className="py-5 border-bottom">
+      <Container className="py-5">
         <Row>
           <Col>
             <h3 className="font-weight-bold">
@@ -79,16 +71,6 @@ export default () => {
                     <i className="fas fa-star" />
                     <i className="far fa-star" />
                   </p>
-                  <h6>
-                    <sup className="mr-1">Php</sup>
-                    <span>{course.price}</span>
-                    <span className="ml-2 text-light">
-                      <del>
-                        <sup className="mr-1">Php</sup>
-                        {course.originalPrice}
-                      </del>
-                    </span>
-                  </h6>
                 </CardBody>
               </Card>
             </Col>
