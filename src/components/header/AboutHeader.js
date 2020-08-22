@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import { Container, Row } from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
 
 export default () => {
   return (
@@ -16,8 +16,12 @@ export default () => {
               width="22%"
             />
           </p>
-          <div class="embed-responsive embed-responsive-21by9 text-center">
-            <ReactPlayer url="https://www.youtube.com/embed/7LqAJoD-PpA?autoplay=1" />
+          <div className="text-center">
+            <Row>
+              <Col className="mx-auto text-center" xs="7">
+                <ReactPlayer url="https://www.youtube.com/watch?v=3RaqGTKomy4?autoplay=1" />
+              </Col>
+            </Row>
           </div>
           <p className="pt-5 font-weight-bold text-center vh-auto text-justify">
             Welcome to the Udemy for Farmers. With the declining number of
@@ -78,7 +82,7 @@ export default () => {
                 src="assets/teamImages/laurence.jpg"
                 class="responsive pl-4 "
               ></img>
-              <p className="pl-4 pt-2">Laurence Lloyd</p>
+              <p className="pl-4 pt-2">Laurence Lloyd Lumagbas</p>
             </div>
             <div className="font-weight-bold">
               <img
