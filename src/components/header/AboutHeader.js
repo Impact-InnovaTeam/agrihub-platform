@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactPlayer from 'react-player';
 import { Container, Row } from 'reactstrap';
 
 export default () => {
@@ -10,15 +10,15 @@ export default () => {
           <p class="display-4 font-weight-bold text-center pt-5">
             About
             <img
+              alt="AgriHub Logo"
               src="assets/logo/agrihub-logo-colored.png"
               class="img-fluid mb-2 pl-2 "
               width="22%"
             />
           </p>
           <div class="embed-responsive embed-responsive-21by9 text-center">
-            <iframe src="https://www.youtube.com/embed/7LqAJoD-PpA?autoplay=1"></iframe>
+            <ReactPlayer url="https://www.youtube.com/embed/7LqAJoD-PpA?autoplay=1" />
           </div>
-
           <p className="pt-5 font-weight-bold text-center vh-auto text-justify">
             Welcome to the Udemy for Farmers. With the declining number of
             Filipino Farmers , the Philippines is facing a new threat... Food
@@ -40,6 +40,7 @@ export default () => {
         <header className="pt-5 text-center font font-weight-bold ">
           Awesome Team Behind{' '}
           <img
+            alt="Agrihub Logo"
             src="assets/logo/agrihub-logo-colored.png"
             class="pb-3 img-fluid"
             width="15%"
@@ -49,6 +50,7 @@ export default () => {
           <Row>
             <div className="font-weight-bold">
               <img
+                alt="Darwin"
                 src="assets/teamImages/darwin.jpg"
                 class="responsive pl-4"
               ></img>
@@ -56,6 +58,7 @@ export default () => {
             </div>
             <div className="font-weight-bold">
               <img
+                alt="Arjay"
                 src="assets/teamImages/arjay.jpg"
                 class="responsive pl-4 "
               ></img>
@@ -63,6 +66,7 @@ export default () => {
             </div>
             <div className="font-weight-bold">
               <img
+                alt="Rollie"
                 src="assets/teamImages/rollie.jpg"
                 class="responsive pl-4 "
               ></img>
@@ -70,6 +74,7 @@ export default () => {
             </div>
             <div className="font-weight-bold">
               <img
+                alt="Laurence"
                 src="assets/teamImages/laurence.jpg"
                 class="responsive pl-4 "
               ></img>
@@ -77,6 +82,7 @@ export default () => {
             </div>
             <div className="font-weight-bold">
               <img
+                alt="Nessa"
                 src="assets/teamImages/nessa.jpg"
                 class="responsive pl-4 "
               ></img>
