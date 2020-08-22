@@ -57,7 +57,7 @@ export default () => {
                     src={course.image}
                     alt={course.title}
                   />
-                  <NavLink className="stretched-link text-dark" to="/course">
+                  <NavLink className="stretched-link text-dark" to="/course/c">
                     <h5 className="font-weight-bold mb-0">{course.title}</h5>
                   </NavLink>
                   <h6>

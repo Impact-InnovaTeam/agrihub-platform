@@ -10,6 +10,7 @@ const Courses = lazy(() => import('views/Courses'));
 const Course = lazy(() => import('views/Course'));
 const SignIn = lazy(() => import('views/SignIn'));
 const SignUp = lazy(() => import('views/SignUp'));
+const NotFound = lazy(() => import('views/NotFound'));
 
 export default () => {
   return (
@@ -36,6 +37,9 @@ export default () => {
           </Route>
           <Route exact path="/signup">
             <SignUp />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </Suspense>

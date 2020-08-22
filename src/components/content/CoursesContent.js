@@ -110,7 +110,7 @@ export default () => {
                     src={course.image}
                     alt={course.title}
                   />
-                  <NavLink className="stretched-link text-dark" to="/course">
+                  <NavLink className="stretched-link text-dark" to="/course/c">
                     <h5 className="font-weight-bold mb-0">{course.title}</h5>
                   </NavLink>
                   <h6>
@@ -203,7 +203,7 @@ export default () => {
               <Card key={index} className="border-0 mb-3 shadow-lg">
                 <Row noGutters>
                   <Col xs="4">
-                    <NavLink className="stretched-link" to="/course">
+                    <NavLink className="stretched-link" to="/course/c">
                       <CardImg
                         className="h-100"
                         src={course.image}
@@ -215,7 +215,7 @@ export default () => {
                     <CardBody className="py-3">
                       <NavLink
                         className="stretched-link text-dark"
-                        to="/course"
+                        to="/course/c"
                       >
                         <h5>{course.title}</h5>
                       </NavLink>
