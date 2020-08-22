@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import Loader from 'components/loader';
+import About from 'views/About';
 
 const Home = lazy(() => import('views/Home'));
 const Dashboard = lazy(() => import('views/Dashboard'));
@@ -11,7 +12,7 @@ const Courses = lazy(() => import('views/Courses'));
 const Course = lazy(() => import('views/Course'));
 const SignIn = lazy(() => import('views/SignIn'));
 const SignUp = lazy(() => import('views/SignUp'));
-const NotFound = lazy(() => import('views/NotFound'));
+const NotFound = lazy(() => import('views/About'));
 
 export default () => {
   return (
@@ -42,8 +43,8 @@ export default () => {
           <Route exact path="/signup">
             <SignUp />
           </Route>
-          <Route path="*">
-            <NotFound />
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </Suspense>
