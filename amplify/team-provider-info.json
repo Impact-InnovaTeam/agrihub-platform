@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-agrihubweb-dev-231903-authRole",
+            "UnauthRoleArn": "arn:aws:iam::733389149014:role/amplify-agrihubweb-dev-231903-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::733389149014:role/amplify-agrihubweb-dev-231903-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-agrihubweb-dev-231903-deployment",
+            "UnauthRoleName": "amplify-agrihubweb-dev-231903-unauthRole",
+            "StackName": "amplify-agrihubweb-dev-231903",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:733389149014:stack/amplify-agrihubweb-dev-231903/d1f3ff70-e48a-11ea-ab0a-02f95ca67868",
+            "AmplifyAppId": "d10krcnor4mfec"
+        }
+    }
+}
