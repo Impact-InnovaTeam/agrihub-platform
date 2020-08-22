@@ -1,13 +1,13 @@
 import React from 'react';
 
-import DashboardContent from 'components/content/DashboardContent';
+import WatchAndLearn from 'components/content/WatchAndLearn';
 
 import DashboardLayout from 'layout/DashboardLayout';
 
 export default () => {
   return (
     <DashboardLayout>
-      <DashboardContent />
+      <WatchAndLearn />
     </DashboardLayout>
   );
 };

@@ -88,7 +88,7 @@ export default () => {
                     <CardBody>
                       <NavLink
                         className="stretched-link text-dark"
-                        to="/course/c"
+                        to="/learn/c"
                       >
                         <h5 className="font-weight-bold mb-0">
                           {course.title}
