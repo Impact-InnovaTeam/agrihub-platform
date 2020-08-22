@@ -22,56 +22,36 @@ export default () => {
   };
 
   return (
-    <Navbar className={classnames('bg-white', 'shadow-lg')} light expand="lg">
-      <Container>
-        <NavbarBrand id="navLogo" className="font-weight-bold" href="/">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/logo/agrihub-logo-colored.png`}
-            alt={`${process.env.REACT_APP_NAME} - ${process.env.REACT_APP_CAPTION}`}
-            loading="lazy"
-          />
+    <Navbar className={classnames('bg-white', 'shadow-sm')} light expand="lg">
+      <Container fluid>
+        <NavbarBrand
+          id="navLogo"
+          className="font-weight-bold text-primary"
+          href="/"
+        >
+          AgriHub
         </NavbarBrand>
         <NavbarToggler color="primary" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem className="mx-2">
               <NavLink
-                className={classnames('text-primary', 'px-3')}
-                href="/about"
+                className={classnames('text-primary')}
+                href="/courses/enrolled"
               >
-                About
+                My Courses
               </NavLink>
             </NavItem>
             <NavItem className="mx-2">
               <NavLink
-                className={classnames('text-primary', 'px-3')}
-                href="/courses"
+                className={classnames('text-primary')}
+                href="/all-courses"
               >
-                Courses
-              </NavLink>
-            </NavItem>
-            <NavItem className="mx-2">
-              <NavLink
-                className={classnames('text-primary', 'px-3')}
-                href="/community"
-              >
-                Community
-              </NavLink>
-            </NavItem>
-            <NavItem className="mx-2">
-              <NavLink
-                className={classnames('text-primary', 'px-3')}
-                href="/faq"
-              >
-                FAQ
+                All Courses
               </NavLink>
             </NavItem>
             <UncontrolledDropdown className="mx-2" nav inNavbar>
-              <DropdownToggle
-                nav
-                caret
-                className={classnames('text-primary', 'px-3')}
-              >
+              <DropdownToggle nav caret className={classnames('text-primary')}>
                 English
               </DropdownToggle>
               <DropdownMenu className="shadow-lg" right>
@@ -79,20 +59,17 @@ export default () => {
                 <DropdownItem>Cebuano</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem className="mb-3 mb-lg-0 ml-md-2">
-              <NavLink
-                className={classnames(
-                  'btn-secondary',
-                  'btn',
-                  'px-5',
-                  'text-white',
-                  'rounded-pill'
-                )}
-                href="/signin"
-              >
-                Sign In
-              </NavLink>
-            </NavItem>
+            <UncontrolledDropdown className="mx-2" nav inNavbar>
+              <DropdownToggle nav caret className={classnames('text-primary')}>
+                Darwin Camahalan
+              </DropdownToggle>
+              <DropdownMenu className="shadow-lg" right>
+                <DropdownItem href="/account">Profile</DropdownItem>
+                <DropdownItem href="/settings">Settings</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem href="/">Logout</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </Nav>
         </Collapse>
       </Container>

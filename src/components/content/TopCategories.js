@@ -21,7 +21,7 @@ const categories = [
   {
     name: 'Financing',
     image: `${process.env.PUBLIC_URL}/assets/categories/financing.jpg`,
-    path: '/search?category=financing-farming',
+    path: '/search?category=financing',
   },
   {
     name: 'Poultry Farming',

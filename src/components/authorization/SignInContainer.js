@@ -1,8 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { Button, Card, CardBody, Col, Container, Input, Row } from 'reactstrap';
 
 export default () => {
+  const history = useHistory();
+
   return (
     <section id="ahAuthorization" className="vh-100">
       <Container className="h-100 p-0" fluid>
@@ -13,13 +15,23 @@ export default () => {
                 <h1 className="mb-3 font-weight-bold">Sign In</h1>
                 <Row className="mt-4 mb-2 pb-4">
                   <Col xs="12" md="6">
-                    <Button className="p-2" color="success" block>
+                    <Button
+                      className="p-2"
+                      color="success"
+                      block
+                      onClick={() => history.push('/dashboard')}
+                    >
                       <i className="fab fa-facebook-square mr-3" /> Sign in with
                       Facebook
                     </Button>
                   </Col>
                   <Col xs="12" md="6">
-                    <Button className="p-2" color="light" block>
+                    <Button
+                      className="p-2"
+                      color="light"
+                      block
+                      onClick={() => history.push('/dashboard')}
+                    >
                       <i className="fab fa-google mr-3" />
                       Sign in with Google
                     </Button>
@@ -45,7 +57,12 @@ export default () => {
                     </NavLink>
                   </Col>
                   <Col className="mr-auto" xs="4">
-                    <Button className="px-3" color="primary" block>
+                    <Button
+                      className="px-3"
+                      color="primary"
+                      block
+                      onClick={() => history.push('/dashboard')}
+                    >
                       Sign In &rarr;
                     </Button>
                   </Col>

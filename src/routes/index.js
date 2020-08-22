@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Loader from 'components/loader';
 
 const Home = lazy(() => import('views/Home'));
+const Dashboard = lazy(() => import('views/Dashboard'));
 const Community = lazy(() => import('views/Community'));
 const CommunityTopic = lazy(() => import('views/Topic'));
 const Courses = lazy(() => import('views/Courses'));
@@ -19,6 +20,9 @@ export default () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
           </Route>
           <Route exact path="/community">
             <Community />
