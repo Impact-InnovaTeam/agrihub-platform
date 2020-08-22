@@ -25,8 +25,8 @@ You must have the following applications installed in your machine:
   - [ ] About
   - [x] Community
   - [x] Community Discussion
-  - [ ] Courses
-  - [ ] View Course
+  - [x] Courses
+  - [x] View Course
   - [ ] Profile
   - [x] Login/Registration
 - [ ] Localization

@@ -68,7 +68,7 @@ export default () => {
             </Col>
           </Row>
           <Row className="py-3">
-            <Col xs="9">
+            <Col className="order-1 order-sm-12" xs="12" md="9">
               <h1>Farming and Everything</h1>
               <p>
                 Master the art of farming and farming techniques with this
@@ -105,7 +105,7 @@ export default () => {
                 Last updated 4/2020
               </p>
             </Col>
-            <Col className="text-center" xs="3">
+            <Col className="text-center order-12 order-sm-1" xs="12" md="3">
               <img
                 className="img-thumbnail"
                 src={`${process.env.PUBLIC_URL}/assets/sample/pexels-iconcom-236473.jpg`}
@@ -114,7 +114,7 @@ export default () => {
               <Button className="mt-3" block color="primary" size="lg">
                 Get This Course
               </Button>
-              <Button className="mt-3" block color="warning" size="lg">
+              <Button className="my-3" block color="warning" size="lg">
                 Share
                 <i className="ml-2 fas fa-share" />
               </Button>
