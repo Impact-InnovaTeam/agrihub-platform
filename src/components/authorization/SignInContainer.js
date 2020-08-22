@@ -7,18 +7,18 @@ export default () => {
     <section id="ahAuthorization" className="vh-100">
       <Container className="h-100 p-0" fluid>
         <Row className="h-100">
-          <Col className="h-100 order-12 d-flex p-5" xs="12" lg="7">
-            <Card className="m-5 w-100 shadow-lg border-0">
-              <CardBody className="text-center px-5 py-3">
+          <Col className="h-100 order-12 d-flex p-md-5 p-3" xs="12" lg="7">
+            <Card className="m-md-5 m-3 w-100 shadow-lg border-0">
+              <CardBody className="text-center px-md-5 py-3">
                 <h1 className="mb-3 font-weight-bold">Sign In</h1>
                 <Row className="mt-4 mb-2 pb-4">
-                  <Col xs="6">
+                  <Col xs="12" md="6">
                     <Button className="p-2" color="success" block>
                       <i className="fab fa-facebook-square mr-3" /> Sign in with
                       Facebook
                     </Button>
                   </Col>
-                  <Col xs="6">
+                  <Col xs="12" md="6">
                     <Button className="p-2" color="light" block>
                       <i className="fab fa-google mr-3" />
                       Sign in with Google

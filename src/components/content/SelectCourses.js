@@ -77,7 +77,7 @@ export default () => {
           ))}
         </Row>
         <Row className="mt-3">
-          <Col className="mx-auto" xs="4">
+          <Col className="mx-auto" xs="12" md="4">
             <NavLink
               className="btn-secondary btn-lg btn-block text-center"
               to="/"

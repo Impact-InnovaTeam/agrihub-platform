@@ -4,6 +4,7 @@ import Header from 'components/header';
 import SelectCourses from 'components/content/SelectCourses';
 import Pricing from 'components/content/Pricing';
 import TopCategories from 'components/content/TopCategories';
+import HomeCTA from 'components/content/HomeCTA';
 import FooterContent from 'components/footer/FooterContent';
 import Footer from 'components/footer';
 
@@ -16,6 +17,7 @@ export default () => {
       <SelectCourses />
       <Pricing />
       <TopCategories />
+      <HomeCTA />
       <FooterContent />
       <Footer />
     </SiteLayout>

@@ -9,11 +9,16 @@ export default () => {
         <Row>
           <Col className="mx-auto text-center text-white" xs="6">
             <h1>Subscription Pricing</h1>
-            <CustomInput className="mb-5" type="switch" label="Monthly" />
+            <CustomInput
+              id="ahSubscriptionType"
+              className="mb-5"
+              type="switch"
+              label="Monthly"
+            />
           </Col>
         </Row>
         <Row>
-          <Col className="ml-auto p-3" xs="4">
+          <Col className="ml-auto p-3" xs="12" md="4">
             <Card className="h-100 shadow-lg bg-light border-0">
               <CardBody className="text-center">
                 <h5>Starter</h5>
@@ -34,7 +39,7 @@ export default () => {
               </CardBody>
             </Card>
           </Col>
-          <Col className="mr-auto" xs="4">
+          <Col className="mr-auto" xs="12" md="4">
             <Card className="h-100 shadow-lg bg-info border-0">
               <CardBody className="text-center">
                 <h5 className="font-weight-bold">Premium</h5>

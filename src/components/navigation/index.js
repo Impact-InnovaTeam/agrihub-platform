@@ -124,7 +124,7 @@ export default () => {
                 )}
                 href="/signin"
               >
-                Start Learning
+                <strong className="mr-2">Start Learning</strong>- It's Free
               </NavLink>
             </NavItem>
           </Nav>
