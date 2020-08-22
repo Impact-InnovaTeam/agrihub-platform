@@ -5,7 +5,9 @@ import Loader from 'components/loader';
 
 const Home = lazy(() => import('views/Home'));
 const Community = lazy(() => import('views/Community'));
-const Topic = lazy(() => import('views/Topic'));
+const CommunityTopic = lazy(() => import('views/Topic'));
+const Courses = lazy(() => import('views/Courses'));
+const Course = lazy(() => import('views/Course'));
 const SignIn = lazy(() => import('views/SignIn'));
 const SignUp = lazy(() => import('views/SignUp'));
 
@@ -21,7 +23,13 @@ export default () => {
             <Community />
           </Route>
           <Route exact path="/community/t">
-            <Topic />
+            <CommunityTopic />
+          </Route>
+          <Route exact path="/courses">
+            <Courses />
+          </Route>
+          <Route exact path="/course/c">
+            <Course />
           </Route>
           <Route exact path="/signin">
             <SignIn />

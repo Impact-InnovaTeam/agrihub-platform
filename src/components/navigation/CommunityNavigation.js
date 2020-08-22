@@ -25,7 +25,11 @@ export default () => {
     <Navbar className={classnames('bg-white', 'shadow-lg')} light expand="lg">
       <Container>
         <NavbarBrand id="navLogo" className="font-weight-bold" href="/">
-          AgriHub
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/logo/agrihub-logo-colored.png`}
+            alt={`${process.env.REACT_APP_NAME} - ${process.env.REACT_APP_CAPTION}`}
+            loading="lazy"
+          />
         </NavbarBrand>
         <NavbarToggler color="primary" onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -44,6 +48,14 @@ export default () => {
                 href="/courses"
               >
                 Courses
+              </NavLink>
+            </NavItem>
+            <NavItem className="mx-2">
+              <NavLink
+                className={classnames('text-primary', 'px-3')}
+                href="/community"
+              >
+                Community
               </NavLink>
             </NavItem>
             <NavItem className="mx-2">

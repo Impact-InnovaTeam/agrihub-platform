@@ -76,6 +76,12 @@ export default () => {
             </ListGroup>
           </Col>
           <Col className="text-center text-lg-left mb-5 mb-md-3 mt-lg-0" lg="3">
+            <img
+              className="mb-3 w-75"
+              src={`${process.env.PUBLIC_URL}/assets/logo/agrihub-logo-colored.png`}
+              alt={`${process.env.REACT_APP_NAME} - ${process.env.REACT_APP_CAPTION}`}
+              loading="lazy"
+            />
             <p>
               <i className="fas fa-map-marker-alt mr-3" />
               NCR Philippines
